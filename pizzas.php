@@ -5,21 +5,22 @@
 
 <link rel="stylesheet" href="estilo/jota.css">
 <link rel="stylesheet" href="estilo/stily.css">
-<?php include("navbar.php") ?>
-
-<div>
-
+<?php include ("navbar.php")?>
 <br/>
 <br/>
-
 <br/>
-
+<br/>
 
 <h4 class="centro"> Desfrute um pouco de nosso cardápio. <h4>
+<br/>
+<div class="rapo">
+<?php require_once("parametros.php");
+parametros::dados();
+?>
+</div>		
 <html>
 <body>
 <script type="text/javascript" src="js/carrinho.js"></script>
 </body>
 </html>
-
-<?php include("footer.php") ?>
+<?php include ("footer.php")?>

@@ -2,6 +2,37 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 body{
 }
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 40%;
+  }
+  .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container {
+	padding: 2px 16px;
+  }
+.rapo {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 1em;
+ }
+grid-container {
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+  }
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+  }
 .box{
 	background: #e57373;
 	border-radius: 3px;
@@ -14,6 +45,9 @@ brancao{
 	color: #e0e0e0 solid !important;
 	width: 150px;
 	height: 150px;
+}
+green{
+	color: #21b428 solid !important;
 }
 
 .imgjota{
@@ -143,6 +177,25 @@ p{
 .laranja{
 	background-color:  #995501;
 }
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	grid-auto-rows: 200px;
+	grid-template-areas:
+	  ". a a ."
+	  ". a a .";
+  }
+.lateral{
+	background-color:  #995501;
+	padding: 10px;
+}
+.item1 {
+	grid-area: a;
+	align-self: center;
+	justify-self: center;
+	background-color: #ffffff;
+  }
 i {
  color: #995501;
 }
