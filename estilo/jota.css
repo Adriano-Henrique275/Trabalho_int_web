@@ -46,8 +46,9 @@ brancao{
 	width: 150px;
 	height: 150px;
 }
-green{
+.green{
 	color: #21b428 solid !important;
+    text-align: center;
 }
 
 .imgjota{
@@ -55,12 +56,11 @@ green{
 	padding: 20px;
 }
 
-pizzafundo{
+
+.pizzafundo{
 	width: 100%;
 	margin: 0 auto;
-	background-image: url("../img/backpizza.png")  repeat-none;
-
-
+	background: #995501;
 }
 nav .nav-wrapper{
 	padding-bottom: 0px !important;
@@ -111,11 +111,10 @@ nav ul > .active a{
 
 }
 .topo{
-	width: 100%;
 	margin: 0 auto;
 	height: 400px !important;
 	max-height: 400px !important;
-	background-image: url("../img/backpizza.png")  repeat-none;
+	background-image: url("../imagem/pizza_01.jpg")  repeat-none;
 }
 .jota{
 	width: 100%;
@@ -148,6 +147,10 @@ h2{
 
 	padding-bottom: 0px !important;
 }
+.ftpizzas{
+	width: 350px;
+	height: 350px;
+}
 .page-footer p{
 	padding: 30px;
 	font-weight: bold;
@@ -158,6 +161,19 @@ h2{
 }
 p{
 	margin: 0 auto;
+}
+.fundodapizza  {
+	background-image: url("https://i.pinimg.com/736x/f6/73/f1/f673f14346db0c0eb4c7b86198027919.jpg");
+}
+
+.checkout  {
+	height: 100%;
+	width: 50%;
+	float: right;
+	background-image: url("https://i.pinimg.com/736x/01/98/0d/01980df51785f782f0dd775b3f3cc16b.jpg");
+}
+.checkoutlado  {
+	float: left;
 }
 .conteudo{
 	width: 90%;
@@ -218,6 +234,17 @@ h4 {
 	text-align: center;
 
 }
+
+.centronovo {
+	color: #259901;
+	font-family: 'Ubuntu', sans-serif;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+
+}
 h5 {
 	color: #ffffff;
 	font-family: 'Ubuntu', sans-serif;
@@ -265,6 +292,18 @@ input{
 .formulario{
 	width: 60% !important;
 }
+.botaoverde {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
 .total{
 	width: 90% !important;
 }
@@ -272,6 +311,45 @@ input{
 	width: 23% !important;
 	
 }
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+  }
+  .modal:target {
+	opacity: 1;
+	pointer-events: auto;
+  }
+  .modal > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 15px 20px;
+	background: #fff;
+  }
+  .fechar {
+	position: absolute;
+	width: 30px;
+	right: -15px;
+	top: -20px;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 5px;
+	background: #ff4545;
+	border-radius: 50%;
+	font-size: 16px;
+	color: #8d0000;
+  } 
 .linha-vertical {
 	height: 500px !important;/*Altura da linha*/
 	border-left: 2px solid !important;/* Adiciona borda esquerda na div como ser fosse uma linha.*/

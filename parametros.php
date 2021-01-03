@@ -4,10 +4,10 @@ class parametros{
 
 
     public function dados(){
-         $array = array(["id"=>"1", "sabor"=>"4 Queijos", "quantia"=>"1", "preco"=>"35.00", "img"=> "http:blog.pizzaprime.com.br/wp-content/uploads/2018/12/pizza-quatro-queijos-imagem-destacada-750x500.jpg"],
+         $array = array(["id"=>"1", "sabor"=>"4 Queijos", "quantia"=>"1", "preco"=>"35.00", "img"=> "https://www.clonepizza.com.br/wp-content/uploads/quatro-queijos-3.jpg"],
          ["id"=>"2","sabor"=>"Margherita","quantia"=>"1", "preco"=>"36.00", "img"=> "https:portal-amb-imgs.clubedaana.com.br/2019/04/pizza-margherita-600x400.jpg"],
          ["id"=>"3","sabor"=>"Baiana", "quantia"=>"1", "preco"=>"37.00","img"=> "https:www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-baiana-1.jpg"],
-         ["id"=>"4","sabor"=>"Portuguesa", "quantia"=>"1", "preco"=>"34.00","img"=> "https:img.itdg.com.br/tdg/images/recipes/000/002/807/96170/96170_original.jpg"],
+         ["id"=>"4","sabor"=>"Portuguesa", "quantia"=>"1", "preco"=>"34.00","img"=> "https://media.gazetadopovo.com.br/2020/10/14150336/1_rei_da_pizza-portuguesa.jpg"],
          ["id"=>"5","sabor"=>"Brocolis", "quantia"=>"1", "preco"=>"39.00","img"=> "https:img.itdg.com.br/images/recipes/000/155/954/102994/102994_original.jpg"],
          ["id"=>"6","sabor"=>"Aliche", "quantia"=>"1", "preco"=>"30.00","img"=> "https:media-cdn.tripadvisor.com/media/photo-s/05/25/33/83/villa-roma-pizzaria.jpg"],
          ["id"=>"7","sabor"=>"Alho e Oleo", "quantia"=>"1", "preco"=>"28.00","img"=> "https:media-cdn.tripadvisor.com/media/photo-s/12/f2/aa/6f/pizza-de-alho-e-oleo.jpg"],
@@ -24,14 +24,23 @@ class parametros{
 
 
              echo '
-             <div class="card">
-             <img src='.$img.' alt="Avatar" weidth="50px" heigth="50px">
+             <div class="col-sm-4 col-md-4">
+             <div class="panel panel-default">
+             <div class="panel-body">
+             <div align="center">
+             <img class="ftpizzas" src='.$img.'></img>
+             </div>
+             <div class="centronovo">
              <h4 class="centro">'.$sabor .' </h4>
-             <h4 class="green"> R$: '. $preco.'</h4>
-
-			 </div>';
-		
-
+             R$ '.$preco.'
+             </div>
+             <div align="center">
+             <button class="botaoverde" href="#abrirmodal" onClick="adicionarAoCarrinho('.$id.');">Adicionar ao carrinho</button>
+             </div>
+             </div>
+             </div>
+            </div>';
+         
 
           }
 }

@@ -11,13 +11,16 @@
 <br/>
 <br/>
 
-<h4 class="centro"> Desfrute um pouco de nosso cardápio. <h4>
+<h4 class="centro"> Desfrute um pouco de nosso cardápio.<h4>
 <br/>
-<div class="rapo">
+<div class="fundodapizza">
+<br/>
+<div class="row image-grid">
 <?php require_once("parametros.php");
 parametros::dados();
 ?>
 </div>		
+</div>
 <html>
 <body>
 <script type="text/javascript" src="js/carrinho.js"></script>
